@@ -47,6 +47,7 @@ import { UploadFilled } from '@element-plus/icons-vue'
 import { ElMessageBox } from 'element-plus'
 import service from "@/libs/utils/request";
 import axios from "axios";
+import { testApi } from "@apis/test/test"
 
 const resMsg = ref('')
 const infoTest = (inputVal: string) => {
@@ -57,8 +58,8 @@ const infoTest = (inputVal: string) => {
     })
 }
 const fetchInterface = (a: number, b: number) => {
-    service.get('ajaxurl/user').then((res: any) => {
-        resMsg.value = res
+    testApi().then(res => {
+        resMsg.value = <string><unknown>res;
     })
 }
 

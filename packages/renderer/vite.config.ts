@@ -44,19 +44,19 @@ export default defineConfig({
         replacement: path.resolve(__dirname, "src"),
       },
       {
-        find: "pages",
+        find: "@pages",
         replacement: path.resolve(__dirname, "src/pages"),
       },
       {
-        find: "apis",
+        find: "@apis",
         replacement: path.resolve(__dirname, "src/apis"),
       },
       {
-        find: "comps",
+        find: "@comps",
         replacement: path.resolve(__dirname, "src/components"),
       },
       {
-        find: "utils",
+        find: "@utils",
         replacement: path.resolve(__dirname, "src/libs/utils"),
       },
     ],
@@ -66,7 +66,7 @@ export default defineConfig({
     host: pkg.env.HOST,
     proxy: {
       "/ajaxurl": {
-        target: "http://172.20.10.13:3000",
+        target: "http://192.168.31.165:3000",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/ajaxurl/, ""),
       },
