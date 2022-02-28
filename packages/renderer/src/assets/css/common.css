@@ -1,0 +1,48 @@
+.l {
+  float: left;
+}
+.r {
+  float: right;
+}
+.clearfloat::after {
+  display: block;
+  clear: both;
+  content: none;
+  visibility: hidden;
+  height: 0;
+}
+.M0 {
+  margin: 0 auto;
+}
+.centerH {
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+}
+.centerW {
+  position: relative;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.center {
+  position: relative;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  left: 50%;
+  top: 50%;
+}
+.BrandColor {
+  color: #409eff;
+}
+.Success {
+  color: #67c23a;
+}
+.Warning {
+  color: #e6a23c;
+}
+.Danger {
+  color: #f56c6c;
+}
+.Info {
+  color: #909399;
+}
