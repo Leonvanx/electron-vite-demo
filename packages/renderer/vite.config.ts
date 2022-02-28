@@ -31,7 +31,7 @@ export default defineConfig({
      * }
      */
   ],
-  base: "/",
+  base: "./",
   build: {
     emptyOutDir: true,
     sourcemap: true,
