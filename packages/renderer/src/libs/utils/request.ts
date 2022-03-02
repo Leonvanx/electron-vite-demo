@@ -1,7 +1,7 @@
 import axios, { AxiosResponse, AxiosRequestConfig } from "axios";
 
 const service = axios.create({
-  baseURL: process.env.NODE_ENV !== "production" ? '' : 'http://172.20.10.13:9000',
+  baseURL: process.env.NODE_ENV !== "production" ? '' : 'http://192.168.31.165:3000',
   timeout: 30000,
 });
 

@@ -59,7 +59,12 @@ const infoTest = (inputVal: string) => {
 }
 const fetchInterface = (a: number, b: number) => {
     testApi().then(res => {
-        resMsg.value = <string><unknown>res;
+        resMsg.value = res;
+    }).catch(err => {
+        ElMessage({
+            message: err,
+            type: 'error',
+        })
     })
 }
 

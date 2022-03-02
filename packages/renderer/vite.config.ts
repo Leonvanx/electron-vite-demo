@@ -66,7 +66,7 @@ export default defineConfig({
     host: pkg.env.HOST,
     proxy: {
       "/ajaxurl": {
-        target: "http://192.168.31.165:3000",
+        target: "http://172.20.10.13:3000",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/ajaxurl/, ""),
       },
